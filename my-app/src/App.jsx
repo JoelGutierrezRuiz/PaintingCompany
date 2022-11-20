@@ -2,6 +2,7 @@
 import { useState } from 'react'
 import Header from './Components/Header';
 import Safety from './Components/Safety';
+import StartSchedule from './Components/StartSchedule';
 import Welcome from './Components/Welcome';
 import './Styles/App.css'
 
@@ -45,6 +46,7 @@ function App() {
             </ul>
         </section>
         <Welcome></Welcome>
+        <StartSchedule></StartSchedule>
         <Safety></Safety>
     </div>
    );

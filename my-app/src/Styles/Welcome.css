@@ -6,7 +6,6 @@
     height: 550px;
     background-color: red;
     display: flex;
-    margin-bottom: 150px;
 }
 /*welcomes componentes*/
 .welcome-img{
@@ -30,30 +29,3 @@
     font-size: 50px;
 }
 
-.welcome-text--schedule p{
-    margin-right: 10px;
-    font-size: 25px;
-    color: white;
-}
-
-.welcome-text--schedule button{
-    cursor: pointer;
-    width: 250px;
-    height: 60px;
-    font-size: 20px;
-    font-weight: 600px;
-    background-color: #FDB913;
-    border: none;
-    border-radius: 5px;
-}
-
-.welcome-text--schedule{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    align-self: flex-end;
-    width: 100%;
-    height:100px;
-    background-color: #4a4a45d8;
-}

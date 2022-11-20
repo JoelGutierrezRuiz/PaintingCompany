@@ -1,0 +1,29 @@
+/*Main*/
+.mainContainer___startSchedule{
+    display: grid;
+    grid-template-rows:auto auto;
+    justify-items: center;
+    width: 100%;
+    height:350px;
+    padding: 50px 0 50px 0;
+}
+/*text*/
+.startSchedule-text{
+    font-size: 20px;
+    text-align: center;
+    width: 70%;
+}
+
+.startSchedule-text h2{
+    margin-bottom: 20px;
+}
+/*button*/
+.startSchedule-button button{
+    cursor: pointer;
+    width: 250px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 600px;
+    background-color: #FDB913;
+    border: none;
+}

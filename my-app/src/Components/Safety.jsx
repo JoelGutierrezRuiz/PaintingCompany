@@ -24,10 +24,11 @@ function Safety (){
             </div>
 
             <div className="safety-icons">
-                <AiOutlineWechat className="safety-icons-icon"></AiOutlineWechat>
-                <FaHeadSideMask className="safety-icons-icon"></FaHeadSideMask>
-                <FaHandHoldingMedical className="safety-icons-icon"></FaHandHoldingMedical>
-                <MdSocialDistance className="safety-icons-icon"></MdSocialDistance>
+                <div className="safety-icons-container"><AiOutlineWechat className="safety-icons-icon"></AiOutlineWechat></div>
+                <div className="safety-icons-container"><FaHeadSideMask className="safety-icons-icon"></FaHeadSideMask></div>
+                <div className="safety-icons-container"><FaHandHoldingMedical className="safety-icons-icon"></FaHandHoldingMedical></div>
+                <div className="safety-icons-container"><MdSocialDistance className="safety-icons-icon"></MdSocialDistance></div>
+
             </div>
         </div>
     );
