@@ -6,6 +6,8 @@ import StartSchedule from './Components/StartSchedule';
 import Welcome from './Components/Welcome';
 import './Styles/App.css'
 import logo from './Imagenes/logo.png'
+import Experience from './Components/Experience';
+import Footer from './Components/Footer';
 //imports
 function App() {
   const [count, setCount] = useState(0)
@@ -45,8 +47,10 @@ function App() {
             </ul>
         </section>
         <Welcome></Welcome>
+        <Experience></Experience>
         <StartSchedule></StartSchedule>
         <Safety></Safety>
+        <Footer></Footer>
     </div>
    );
 }
