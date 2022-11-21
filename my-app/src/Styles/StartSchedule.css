@@ -1,5 +1,6 @@
 /*Main*/
 .mainContainer___startSchedule{
+    background-color: white;
     display: grid;
     grid-template-rows:auto auto;
     justify-items: center;
@@ -19,11 +20,22 @@
 }
 /*button*/
 .startSchedule-button button{
+    
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 250px;
     height: 60px;
     font-size: 20px;
     font-weight: 600px;
     background-color: #FDB913;
     border: none;
+}
+/*icon*/
+
+.startSchedule-icon{
+    margin-left: 5px;
+    font-size: 25px;
+    color: black;
 }

@@ -5,17 +5,16 @@ import Safety from './Components/Safety';
 import StartSchedule from './Components/StartSchedule';
 import Welcome from './Components/Welcome';
 import './Styles/App.css'
-
+import logo from './Imagenes/logo.png'
 //imports
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <div className='mainContainer-app'>
-        <Header></Header>
         <section className='navigate'>
             <ul className='mainContainer__navigate'>
-
+                <li className='navigate-logo'><img className='logo-header' src={logo}></img></li>
                 <li className='navigate-li navigate-li--residential'>
                     RESIDENDENTIAL PAINTING
                     <div className='ampliation'>

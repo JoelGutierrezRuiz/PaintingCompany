@@ -8,8 +8,6 @@ function Welcome (){
         <div className="mainContainer__welcome">
             <div className="welcome-text">HOUSE PAINTING SERVICES</div>
             <img className="welcome-img" src={painter}></img>
-
-            
         </div>
     );
 }
