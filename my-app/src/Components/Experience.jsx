@@ -12,7 +12,7 @@ function Experience (){
             from:{number:0},
             number:n,
             delay:200,
-            config:{mass:1, tension:20,friction:25}
+            config:{mass:1, tension:20,friction:30}
         });
         return <animated.div>{number.to((n)=> n.toFixed(0))}</animated.div>
     }
@@ -20,23 +20,30 @@ function Experience (){
         const {number}= useSpring({
             from:{number:0},
             number:n,
-            delay:500,
-            config:{mass:1, tension:20,friction:50}
+            delay:200,
+            config:{mass:1, tension:20,friction:30}
         });
         return <animated.div>{number.to((n)=> n.toFixed(0))}</animated.div>
     }
 
     return (
         <div className="mainContainer__experience">
+            
             <div className="experience-years">
                 <div className="experience-paintEffect"><AiFillFormatPainter className="experience-iconEffect"></AiFillFormatPainter></div>
-                <span className="experience-years-number"><Years n={18}/></span>
+                <span className="experience-years-number">
+                    <Years className="years-counter" n={18}/>
+                </span>
                 <p className="experience-years-text">Years in Business</p>
             </div>
+
             <div className="experience-clients">
-                <span className="experience-clients-number"><Clients n={350}/></span>
+                <span className="experience-clients-number">
+                    <Clients className="clients-counter" n={350}/>
+                </span>
                 <p className="experience-clients-text">Families and Companies Satisfied with our services</p>
             </div>
+
         </div>
     );
 }

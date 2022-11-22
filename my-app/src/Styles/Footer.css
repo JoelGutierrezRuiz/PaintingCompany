@@ -3,7 +3,7 @@
     position: relative;
     width: 100%;
     height: 300px;
-    background-color: rgba(165, 77, 0, 0.807);
+    background-color: rgba(109, 109, 109, 0.845);
 }
 
 /*video background*/
@@ -13,4 +13,12 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+/*icons*/
+
+.footer-icon{
+    cursor: pointer;
+    color: white;
+    font-size: 45px;
 }
