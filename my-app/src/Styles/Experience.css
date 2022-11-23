@@ -6,7 +6,7 @@
     display: flex;
     width: 100%;
     height: 200px;
-    background-color: #fdd776f2;
+    background-color: #FF9000;
 }
 /*experience years*/
 .experience-years-number{
@@ -34,12 +34,13 @@
 /*paint effect*/
 
 .experience-paintEffect{
+    border:2px solid white;
     border-radius: 5px;
     display: flex;
     align-items: center;
     width:250px;
     height: 60px;
-    background-color: #00000058;
+    background-color: rgba(255, 255, 255, 0.255);
     position: absolute;
     animation-name: pinturaDesvanece;
     animation-duration:2s;
@@ -49,11 +50,11 @@
 
 @keyframes pinturaDesvanece{
     0%{
-        background-color: #000000;
+        background-color: rgb(255, 255, 255);
        
     }
     100%{
-        background-color:#00000058;
+        background-color:rgba(255, 255, 255, 0.255);
         
     }
 }
