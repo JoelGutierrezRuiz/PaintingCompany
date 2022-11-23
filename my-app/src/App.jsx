@@ -47,7 +47,6 @@ function App() {
             </ul>
         </section>
         <Welcome></Welcome>
-        <Experience></Experience>
         <StartSchedule></StartSchedule>
         <Safety></Safety>
         <Footer></Footer>

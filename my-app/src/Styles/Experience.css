@@ -1,47 +1,79 @@
 /*main*/
 .mainContainer__experience{
+    position: absolute;
     color: white;
     justify-content: center;
     align-items: center;
     display: flex;
     width: 100%;
     height: 200px;
+    
+}
+
+/*container years y clients*/
+.mainContainer-years-clients{
+    height: 100%;
     background-color: #FF9000;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /*experience years*/
 .experience-years-number{
+    
     font-size: 35px;
 }
 .experience-years{
-    display: grid;
-    grid-template-rows:auto auto;
-    justify-items: center;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    justify-content: center;
     align-items: center;
     flex: 1;
 }
-/*experience clients*/
-.experience-clients-number{
+
+.experience-years-plus{
+    
     font-size: 35px;
 }
+.experience-years-text{
+    align-self: flex-end;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+/*experience clients*/
+
 .experience-clients{
+    height: 100%;
+    cursor: pointer;
     display: grid;
     grid-template-rows:auto auto;
     justify-items: center;
     align-items: center;
     flex: 1;
+}
+.experience-clients-number{
+    font-size: 35px;
+    align-self: flex-end;
+}
+
+.experience-clients-text{
+    font-size: 20px;
 }
 
 /*paint effect*/
 
 .experience-paintEffect{
+    position: absolute;
     border:2px solid white;
     border-radius: 5px;
     display: flex;
     align-items: center;
+    justify-content: center;
     width:250px;
     height: 60px;
     background-color: rgba(255, 255, 255, 0.255);
-    position: absolute;
     animation-name: pinturaDesvanece;
     animation-duration:2s;
 }
@@ -60,7 +92,7 @@
 }
 
 .experience-iconEffect{
-    position: relative;
+    position: absolute;
     left: 220px;
     transform: rotate(-90deg);
     font-size: 78px;
@@ -72,7 +104,7 @@
 
 @keyframes slide{
     0%{
-        left: -20px;
+        left:-20px;
     }
     100%{
        left:220px

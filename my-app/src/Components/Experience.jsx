@@ -28,21 +28,34 @@ function Experience (){
 
     return (
         <div className="mainContainer__experience">
-            
-            <div className="experience-years">
-                <div className="experience-paintEffect"><AiFillFormatPainter className="experience-iconEffect"></AiFillFormatPainter></div>
-                <span className="experience-years-number">
-                    <Years className="years-counter" n={18}/>
-                </span>
-                <p className="experience-years-text">Years in Business</p>
-            </div>
 
-            <div className="experience-clients">
-                <span className="experience-clients-number">
-                    <Clients className="clients-counter" n={350}/>
-                </span>
-                <p className="experience-clients-text">Families and Companies Satisfied with our services</p>
+            <div className="mainContainer-years-clients">
+
+                <div className="experience-years">
+                    <div className="experience-paintEffect">
+                        
+                        <AiFillFormatPainter className="experience-iconEffect"></AiFillFormatPainter>
+                        <span className="experience-years-number">
+                            <Years className="years-counter" n={18}/>
+                        </span>
+                        <span className="experience-years-plus">+</span>
+                        
+                    </div>
+
+                    <p className="experience-years-text">Years in Business</p>
+                    
+                    
+                </div>
+
+                <div className="experience-clients">
+                    <span className="experience-clients-number">
+                        <Clients className="clients-counter" n={350}/>
+                    </span>
+                    <p className="experience-clients-text">Families and Companies Satisfied with our services</p>
+                </div>
             </div>
+            
+
 
         </div>
     );
