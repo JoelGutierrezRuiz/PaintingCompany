@@ -18,7 +18,6 @@ function App() {
         <img className='fixed-img' src={fixed}></img>
         <section className='navigate'>
             <ul className='mainContainer__navigate'>
-                <li className='navigate-logo'><img className='logo-header' src={logo}></img></li>
                 <li className='navigate-li navigate-li--residential'>
                     RESIDENDENTIAL PAINTING
                     <div className='ampliation'>
@@ -51,7 +50,6 @@ function App() {
         <Welcome></Welcome>
         <StartSchedule></StartSchedule>
         <Reviews></Reviews>
-        <Safety></Safety>
         <Footer></Footer>
     </div>
    );
