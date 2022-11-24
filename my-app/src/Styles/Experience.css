@@ -25,12 +25,18 @@
     font-size: 35px;
 }
 .experience-years{
+    
     cursor: pointer;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex: 1;
+    transition:box-shadow .3s;
+}
+
+.experience-years:hover{
+    box-shadow:10px 10px 10px rgb(87, 87, 87) ;
 }
 
 .experience-years-plus{
@@ -47,18 +53,31 @@
 .experience-clients{
     height: 100%;
     cursor: pointer;
-    display: grid;
-    grid-template-rows:auto auto;
-    justify-items: center;
+    display: flex;
+    justify-content: center;
     align-items: center;
     flex: 1;
+    transition:box-shadow .3s;
 }
-.experience-clients-number{
+
+.experience-clients-number-text-container{
+    position: absolute;
     font-size: 35px;
-    align-self: flex-end;
+    display: flex;
+}
+
+.experience-clients:hover{
+    box-shadow:5px 5px 5px rgb(87, 87, 87) ;
+}
+
+.experience-clients-number{
+
+
 }
 
 .experience-clients-text{
+    align-self: flex-end;
+    margin-bottom: 25px;
     font-size: 20px;
 }
 

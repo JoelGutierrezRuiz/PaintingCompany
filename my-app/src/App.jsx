@@ -8,6 +8,7 @@ import './Styles/App.css'
 import logo from './Imagenes/logo.png'
 import Experience from './Components/Experience';
 import Footer from './Components/Footer';
+import Reviews from './Components/Reviews';
 //imports
 function App() {
   const [count, setCount] = useState(0)
@@ -48,6 +49,7 @@ function App() {
         </section>
         <Welcome></Welcome>
         <StartSchedule></StartSchedule>
+        <Reviews></Reviews>
         <Safety></Safety>
         <Footer></Footer>
     </div>

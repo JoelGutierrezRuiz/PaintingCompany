@@ -21,7 +21,7 @@ function Experience (){
             from:{number:0},
             number:n,
             delay:200,
-            config:{mass:1, tension:20,friction:30}
+            config:{mass:1, tension:20,friction:20}
         });
         return <animated.div>{number.to((n)=> n.toFixed(0))}</animated.div>
     }
@@ -48,9 +48,14 @@ function Experience (){
                 </div>
 
                 <div className="experience-clients">
-                    <span className="experience-clients-number">
-                        <Clients className="clients-counter" n={350}/>
-                    </span>
+                    <div className="experience-clients-number-text-container">
+                        <span className="experience-clients-number">
+                            <Clients className="clients-counter" n={2500}/>
+                        </span>
+                        <span className="experience-clients-plus">+</span>
+                    </div>
+                    
+                    
                     <p className="experience-clients-text">Families and Companies Satisfied with our services</p>
                 </div>
             </div>
