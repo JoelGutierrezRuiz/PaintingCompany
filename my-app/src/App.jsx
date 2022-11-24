@@ -6,15 +6,16 @@ import StartSchedule from './Components/StartSchedule';
 import Welcome from './Components/Welcome';
 import './Styles/App.css'
 import logo from './Imagenes/logo.png'
-import Experience from './Components/Experience';
 import Footer from './Components/Footer';
 import Reviews from './Components/Reviews';
+import fixed from './Imagenes/fixed.jpg'
 //imports
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <div className='mainContainer-app'>
+        <img className='fixed-img' src={fixed}></img>
         <section className='navigate'>
             <ul className='mainContainer__navigate'>
                 <li className='navigate-logo'><img className='logo-header' src={logo}></img></li>

@@ -3,7 +3,7 @@
     position: relative;
     width: 100%;
     height: 300px;
-    background-color: rgba(109, 109, 109, 0.845);
+    background-color: white;
 }
 
 /*video background*/
@@ -19,6 +19,6 @@
 
 .footer-icon{
     cursor: pointer;
-    color: white;
+    color: orange;
     font-size: 45px;
 }

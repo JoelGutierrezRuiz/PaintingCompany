@@ -50,7 +50,7 @@ function Experience (){
                 <div className="experience-clients">
                     <div className="experience-clients-number-text-container">
                         <span className="experience-clients-number">
-                            <Clients className="clients-counter" n={2500}/>
+                            <Clients className="clients-counter" n={1500}/>
                         </span>
                         <span className="experience-clients-plus">+</span>
                     </div>
