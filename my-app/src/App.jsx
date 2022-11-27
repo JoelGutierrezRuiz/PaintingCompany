@@ -4,6 +4,7 @@ import Header from './Components/Header';
 import Safety from './Components/Safety';
 import StartSchedule from './Components/StartSchedule';
 import Welcome from './Components/Welcome';
+import {GiHamburgerMenu} from 'react-icons/gi'
 import './Styles/App.css'
 import logo from './Imagenes/logo.png'
 import Footer from './Components/Footer';
@@ -17,6 +18,10 @@ function App() {
     <div className='mainContainer-app'>
         <img className='fixed-img' src={fixed}></img>
         <section className='navigate'>
+            <div className='navigate-responsive'>
+                <GiHamburgerMenu/>
+            </div>
+
             <ul className='mainContainer__navigate'>
                 <li className='navigate-li navigate-li--residential'>
                     RESIDENDENTIAL PAINTING

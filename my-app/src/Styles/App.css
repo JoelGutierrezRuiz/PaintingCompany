@@ -11,7 +11,10 @@ body{
     background-color: #474747c7;
 }
 
-
+/*main container app*/
+.mainContainer-app{
+    position: relative;
+}
 
 /*navigate main*/
 
@@ -51,7 +54,7 @@ body{
 
 .ampliation{
   
-    position: absolute;
+    position: relative;
     top: 50px;
     width: 100%;
     height: 80px;
@@ -107,4 +110,19 @@ body{
     object-fit: cover;
     width: 100%;
     height: 100%;
+}
+
+
+/*navigate responsive*/
+.navigate-responsive{
+    display: none;
+}
+
+@media only screen and (max-width: 1200px){
+    .mainContainer__navigate{
+        display:none;
+    }
+    .navigate-responsive{
+        display: inline-block;
+    }
 }

@@ -12,9 +12,10 @@
 
 /*container years y clients*/
 .mainContainer-years-clients{
-    height: 100%;
+    position: relative;
+    height: 200px;
     background-color: #FF9000;
-    width: 70%;
+    width: 1000px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,10 +71,6 @@
     box-shadow:5px 5px 5px rgb(87, 87, 87) ;
 }
 
-.experience-clients-number{
-
-
-}
 
 .experience-clients-text{
     align-self: flex-end;
@@ -127,5 +124,31 @@
     }
     100%{
        left:220px
+    }
+}
+
+
+@media only screen and (max-width: 1200px){
+    .mainContainer-years-clients{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    /*years*/
+    .experience-years-number{
+        font-size: 25px;
+    }
+    .experience-years-text{
+        font-size: 15px;
+    }
+    /*clients*/
+    .experience-clients-text{
+        font-size: 15px;
+    }
+    .experience-clients-number{
+        font-size: 25px;
     }
 }
