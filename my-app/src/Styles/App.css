@@ -10,8 +10,11 @@
 body{
     background-color: #474747c7;
 }
-
-
+/*main*/
+.mainContainer-app{
+    overflow: hidden;
+    height: 100%;
+}
 
 /*navigate main*/
 

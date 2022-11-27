@@ -6,9 +6,19 @@
     display: flex;
     position: relative;
     width: 100%;
-    height: 400px;
+    height: 100%;
     background-color: rgba(118, 118, 118, 0.804);
 }
+/*container logo y directions flex*/
+
+.footer-company{
+    padding-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
 /*logo with icons container*/
 .footer-company-logo{
     padding-top: 40px;
@@ -38,15 +48,6 @@
 
 }
 
-
-/*container logo y directions flex*/
-
-.footer-company{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 100%;
-}
 
 /*directions y phone container*/
 .footer-direction-container{
@@ -93,6 +94,7 @@
 .footer-services{
     width: 100%;
     height: 100%;
+    padding-bottom: 10px;
 }
 
 .footer-info-container{
@@ -113,16 +115,13 @@
     border-right:2px solid white ;
     margin-right: 20px;
     cursor: pointer;
-    transition: font-size .2s;
 }
 
 .woodWork{
     border-right:none;   
 }
 
-.footer-info:hover{
-    font-size: 25px;
-}
+
 
 
 /*video*/
@@ -133,4 +132,12 @@
     object-fit: cover;
     position: absolute;
     z-index: -100;
+}
+
+/*responsive*/
+
+@media only screen and (max-width: 1200px){
+    .footer-company{
+        flex-direction: column;
+    }
 }
