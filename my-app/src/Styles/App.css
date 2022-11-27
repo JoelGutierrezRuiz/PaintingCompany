@@ -11,10 +11,7 @@ body{
     background-color: #474747c7;
 }
 
-/*main container app*/
-.mainContainer-app{
-    position: relative;
-}
+
 
 /*navigate main*/
 
@@ -54,7 +51,7 @@ body{
 
 .ampliation{
   
-    position: relative;
+    position: absolute;
     top: 50px;
     width: 100%;
     height: 80px;
@@ -111,8 +108,6 @@ body{
     width: 100%;
     height: 100%;
 }
-
-
 /*navigate responsive*/
 .navigate-responsive{
     display: none;
@@ -124,5 +119,8 @@ body{
     }
     .navigate-responsive{
         display: inline-block;
+    }
+    .ampliation{
+        position: relative;
     }
 }

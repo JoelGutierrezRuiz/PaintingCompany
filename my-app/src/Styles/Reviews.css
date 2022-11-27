@@ -26,7 +26,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 90%;
     height:50px;
 }
 
@@ -48,4 +47,25 @@
     padding: 25px;
     color: white;
     align-self: flex-end;
+}
+@media only screen and (max-width: 1200px){
+    /*main*/
+    .mainContainer__reviews{
+        height:1000px;
+        width: 100%;
+    }
+    /*review container*/
+    .review-container{
+        width: 80%;
+        border-left:none;
+        border-right:none;
+        border-top:4px solid white;
+        border-bottom:4px solid white;
+    }
+    /*stars*/
+    .review-star{
+        font-size: 30px;
+    }
+    /*text*/
+
 }
