@@ -1,93 +1,110 @@
 /*main*/
 .mainContainer__footer{
-
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     display: flex;
     position: relative;
     width: 100%;
-    height: 500px;
-    background-color: rgb(118, 118, 118);
+    height: 400px;
+    background-color: rgba(118, 118, 118, 0.922);
 }
-
-/*video background*/
-.footer-video{
-    z-index: -1;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/*icons*/
-
-/*footer company info social container*/
-.footer-company{
-    width: 100%;
-    justify-content: center;
-    display: flex;
-}
-
-.footer-icon{
-    cursor: pointer;
-    color: white;
-    font-size: 25px;
-}
-
-/*footer logo*/
-
-.footer-logo{
-
-    width: 200px;
-    height: 200px;
-    object-fit: contain;
-    margin-bottom: 20px;
-
-}
+/*logo with icons container*/
 .footer-company-logo{
-    align-items: center;
+    padding-top: 40px;
+    width: 200px;
     display: flex;
     flex-direction: column;
 }
 
-/*footer icons social*/
-.footer-social{
-    list-style: none;
-    width: 100%;
-    justify-content: space-evenly;
-    display: flex;
+/*logo*/
+.footer-logo{
+    width: 200px;
+    height: 200px;
 }
 
+/*icons list*/
+.footer-social{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+}
 
-/*services*/
+.footer-icon{
+    color: white;
+    font-size: 25px;
+}
+
+/*container logo y directions flex*/
+
+.footer-company{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+/*directions y phone container*/
+.footer-direction-container{
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.footer-direction{
+    margin-bottom: 20px;
+    
+}
+
+.footer-direction-icon{
+    color: #FF9000;
+    margin-right: 20px;
+}
+
+.footer-phone-icon{
+    color: #FF9000;
+    margin-right: 20px;
+}
+
+/*services container*/
 
 .footer-services{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
     height: 100%;
 }
 
 .footer-info-container{
-    list-style: none;
-    color: white;
-}
-
-/*footer direction and phone*/
-.footer-direction-container{
-    text-align: center;
+    
     font-size: 20px;
-    margin-left: 60px;
-    color:white;
-    align-self: center;
+    width: 100%;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100%;
 }
 
-.footer-direction-icon{
-    margin-right: 10px;
+.footer-info{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right:2px solid white ;
+    margin-right: 20px;
+    cursor: pointer;
 }
 
-.footer-phone{
-    margin-top: 20px;
+/*video*/
+
+.video-footer-background{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -100;
 }

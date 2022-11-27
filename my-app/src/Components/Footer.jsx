@@ -6,6 +6,7 @@ import { AiOutlineInstagram } from 'react-icons/ai';
 import { AiFillLinkedin } from 'react-icons/ai';
 import {FaWhatsapp} from 'react-icons/fa'
 import {BiMap} from 'react-icons/bi'
+import {BsPhone} from 'react-icons/bs'
 
 import logo from '../Imagenes/logo.png'
 
@@ -21,7 +22,7 @@ function Footer (){
     
     return(
         <div className="mainContainer__footer">
-
+            <video className="video-footer-background"  loop src={paint} autoPlay muted></video>
             <div className="footer-company">
 
                 <div className="footer-company-logo">
@@ -36,7 +37,7 @@ function Footer (){
 
                 <div className="footer-direction-container">
                     <p className="footer-direction"> <BiMap className="footer-direction-icon"/>6729-6601 Yarmouth Ave, Reseda, CA 91335</p>
-                    <p className="footer-phone">+1 (818) 660-7669</p>   
+                    <p className="footer-phone"><BsPhone className="footer-phone-icon"/> +1 (818) 660-7669</p>   
                 </div>
 
             </div>
