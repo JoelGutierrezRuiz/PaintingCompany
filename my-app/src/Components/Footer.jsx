@@ -37,7 +37,9 @@ function Footer (){
 
                 <div className="footer-direction-container">
                     <p className="footer-direction"> <BiMap className="footer-direction-icon"/>6729-6601 Yarmouth Ave, Reseda, CA 91335</p>
-                    <p className="footer-phone"><BsPhone className="footer-phone-icon"/> +1 (818) 660-7669</p>   
+                    <p className="footer-phone"><BsPhone className="footer-phone-icon"/> +1 (818) 660-7669</p> 
+                    <div className="footer-schedule-button-container"></div> 
+                    <button className="footer-schedule-button">ESTIMATE YOUR PROJECT</button>
                 </div>
 
             </div>
@@ -49,7 +51,7 @@ function Footer (){
                     <li className="footer-info">Services</li>
                     <li className="footer-info">Comercial Painting</li>
                     <li className="footer-info">House Painting</li>
-                    <li className="footer-info">Wood Work</li>
+                    <li className="footer-info woodWork">Wood Work</li>
                 </ul>
             </div>
 
