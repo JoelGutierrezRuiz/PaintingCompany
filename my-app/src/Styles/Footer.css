@@ -1,10 +1,11 @@
 /*main*/
 .mainContainer__footer{
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    display: flex;
-    position: relative;
     width: 100%;
     height: 100%;
     background-color: rgba(118, 118, 118, 0.804);
@@ -137,7 +138,28 @@
 /*responsive*/
 
 @media only screen and (max-width: 1200px){
+    /*main*/
+    .mainContainer__footer{
+        height: 100vh;
+    }
+    /*logo and social*/
     .footer-company{
         flex-direction: column;
     }
+    /*directions y phone container*/
+    .footer-direction-container{
+        margin-top: 30px;
+        font-size: 15px;
+        text-align: center;
+    }
+    /*services*/
+    .footer-info-container{
+        flex-direction: column;
+        padding-bottom: 100px;
+        font-size: 15px;
+    }
+    .footer-info{
+        border: none;
+    }
+    
 }
