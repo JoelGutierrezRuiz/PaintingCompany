@@ -139,13 +139,21 @@
     
     }
     /*years*/
+
+    .experience-years{
+        width: 100%;
+    }
     .experience-years-number{
         font-size: 25px;
     }
     .experience-years-text{
         font-size: 15px;
+
     }
     /*clients*/
+    .experience-clients{
+        width: 100%;
+    }
     .experience-clients-text{
         font-size: 15px;
     }
