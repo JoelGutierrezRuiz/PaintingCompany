@@ -1,12 +1,16 @@
 //imports
-import React from "react";
+import React, { useState } from "react";
 import '../Styles/StartSchedule.css'
 import { AiFillPlayCircle } from 'react-icons/ai';
+import ClientForm from "./ClientForm";
 //imports
 
-function StartSchedule (){
+function StartSchedule ({Page}){
+
+ 
     return(
         <div className="mainContainer___startSchedule">
+
             <div className="startSchedule-text">
                 <h2> A Painting Company You Can Trust</h2>
                 <p >
@@ -15,7 +19,7 @@ function StartSchedule (){
                 </p>
             </div>
             <div className="startSchedule-button">
-                <button >Schedule an Stimate <AiFillPlayCircle className="startSchedule-icon"></AiFillPlayCircle></button>
+                <button onClick={()=>{Page("form")}}>Schedule an Stimate <AiFillPlayCircle className="startSchedule-icon"></AiFillPlayCircle></button>
             </div>
            
         </div>

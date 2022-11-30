@@ -66,6 +66,7 @@
     position: absolute;
     font-size: 35px;
     display: flex;
+    align-items: center;
 }
 
 .experience-clients:hover{

@@ -10,12 +10,24 @@ import logo from './Imagenes/logo.png'
 import Footer from './Components/Footer';
 import Reviews from './Components/Reviews';
 import fixed from './Imagenes/fixed.jpg'
+import ClientForm from './Components/ClientForm';
 //imports
 function App() {
   const [count, setCount] = useState(0)
 
+  const [page,setPage] = useState("");
+
+  const Page = (pagina)=>{
+    setPage(pagina)
+  }
+
+
   return (
+
     <div className='mainContainer-app'>
+        {
+            page=="form"?<ClientForm Page={Page}></ClientForm>:null
+        }
         <img className='fixed-img' src={fixed}></img>
         <section className='navigate'>
             <div className='navigate-responsive'>
@@ -53,7 +65,7 @@ function App() {
             </ul>
         </section>
         <Welcome></Welcome>
-        <StartSchedule></StartSchedule>
+        <StartSchedule Page={Page}></StartSchedule>
         <Reviews></Reviews>
         <Footer></Footer>
     </div>

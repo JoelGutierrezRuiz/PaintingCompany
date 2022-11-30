@@ -12,7 +12,8 @@ body{
 }
 /*main*/
 .mainContainer-app{
-
+    height: 100%;
+    position: relative;
 }
 
 /*navigate main*/
