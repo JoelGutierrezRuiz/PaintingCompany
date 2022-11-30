@@ -67,7 +67,7 @@ function App() {
         <Welcome></Welcome>
         <StartSchedule Page={Page}></StartSchedule>
         <Reviews></Reviews>
-        <Footer></Footer>
+        <Footer Page={Page}></Footer>
     </div>
    );
 }
