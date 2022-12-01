@@ -12,16 +12,16 @@
 
 /*form container*/
 .container__clientForm{
-    width: 50%;
-    height: 50%;
-    background-color: white;
+    width: 500px;
+    height: 400px;
+    background-color: rgb(214, 214, 214);
 }
 
 /*Form title y exit*/
 .clientForm__title{
     width: 100%;
     height: 50px;
-    background-color:gray;
+    background-color:black;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -29,12 +29,52 @@
 
 
 .clientForm__title-text{
+    color: white;
+    font-size: 20px;
     margin-left: 100px;
 }
 
 
+/*ul*/
+.clientForm-form{
+    padding: 20px;
+    list-style: none;
+}
+
+/*li*/
+
+.clientForm-form-buttonType{
+    margin-top: 20px;
+    width: 100%;
+    height: 25%;
+
+}
+
+.buttonType-container div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonType-container button{
+    margin-top: 25px;
+    width: 50%;
+    height: 50px;
+
+}
+/*Next button*/
+
+.clientForm-nextButton{
+    width: 100%;
+    height: 70px;
+
+}
+
 /*icon close*/
 .close-form-icon{
+    color: white;
     cursor: pointer;
     position: relative;
     font-size: 30px;
