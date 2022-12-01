@@ -8,7 +8,11 @@ function ClientForm ({Page}){
     return(
         <div className="mainContainer__clientForm">
             <div className="container__clientForm">
-                <IoMdClose onClick={()=>{Page("")}} className="close-form-icon"/>
+                <div className="clientForm__title">
+                    <p className="clientForm__title-text">Project Information</p>
+                    <IoMdClose onClick={()=>{Page("")}} className="close-form-icon"/>
+                </div>
+                
                 <ul className="clientForm-form">
                     <li className="clientForm-form-input"><input></input></li>
                     <li className="clientForm-form-input"><input></input></li>

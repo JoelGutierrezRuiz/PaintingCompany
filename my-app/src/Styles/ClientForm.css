@@ -12,15 +12,33 @@
 
 /*form container*/
 .container__clientForm{
-    width: 80%;
-    height: 80%;
+    width: 50%;
+    height: 50%;
     background-color: white;
 }
+
+/*Form title y exit*/
+.clientForm__title{
+    width: 100%;
+    height: 50px;
+    background-color:gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.clientForm__title-text{
+    margin-left: 100px;
+}
+
 
 /*icon close*/
 .close-form-icon{
     cursor: pointer;
+    position: relative;
     font-size: 30px;
-    float: right;
-    margin:10px;
+    margin-right: 25px;
+
 }
+
