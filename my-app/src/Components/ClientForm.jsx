@@ -2,6 +2,10 @@
 import React from "react";
 import '../Styles/ClientForm.css'
 import { IoMdClose } from 'react-icons/io';
+import { BsCheckCircleFill } from 'react-icons/bs';
+import { GrLinkNext } from 'react-icons/gr';
+
+
 //import
 function ClientForm ({Page}){
 
@@ -42,7 +46,7 @@ function ClientForm ({Page}){
 
 
                     <li className="clientForm-form-buttonType">
-                        <button className="clientForm-nextButton">Next</button>
+                        <button className="clientForm-nextButton">Next <GrLinkNext color="white" className="clientForm-nextIcon"></GrLinkNext></button>
                     </li>
                     
                 </ul>
