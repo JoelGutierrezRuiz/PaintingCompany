@@ -8,7 +8,7 @@ import {FaWhatsapp} from 'react-icons/fa'
 import {BiMap} from 'react-icons/bi'
 import {BsPhone} from 'react-icons/bs'
 
-import logo from '../Imagenes/logo.png'
+//import logo from '../Imagenes/logo.png'
 
 
 //imports
@@ -26,7 +26,7 @@ function Footer ({Page}){
             <div className="footer-company">
 
                 <div className="footer-company-logo">
-                    <img className="footer-logo" src={logo}></img>
+                    <img className="footer-logo" src={"logo"}></img>
                     <ul className="footer-social">
                         <li><AiOutlineInstagram className="footer-icon"/></li>
                         <li><AiFillLinkedin className="footer-icon"/></li>
