@@ -1,16 +1,16 @@
 //import
 import React, { useState } from "react";
-import '../Styles/ClientForm.css'
+import '../../Styles/Form/ClientForm.css'
 import { IoMdClose } from 'react-icons/io';
 import { BsCheckCircleFill } from 'react-icons/bs';
 import { GrLinkNext } from 'react-icons/gr';
+import InfoForm from "./InfoForm";
 
 
 //import
 function ClientForm ({Page,active,setActive}){
 
-    
-
+    const [next,setNext]= useState(null);
     return(
         <div className="mainContainer__clientForm">
             <div className="container__clientForm">
@@ -18,8 +18,12 @@ function ClientForm ({Page,active,setActive}){
                     <p className="clientForm__title-text">Project Information</p>
                     <IoMdClose onClick={()=>{Page("")}} className="close-form-icon"/>
                 </div>
+
+                {
+                    next?<InfoForm setNext={setNext}/>:null
+                }
                 
-                <ul className="clientForm-form">
+                <ul className="clientForm-form" style={next?{display:"none"}:null}>
                     <li className="clientForm-form-buttonType">
                         <div className="buttonType-container">
                             <p>What type of property needs painting?</p>
@@ -48,10 +52,13 @@ function ClientForm ({Page,active,setActive}){
 
 
                     <li className="clientForm-form-buttonType">
-                        <button className="clientForm-nextButton">Next <GrLinkNext color="white" className="clientForm-nextIcon"></GrLinkNext></button>
+                        <button onClick={()=>{active.home||active.comercial?active.interior||active.exterior||active.both?setNext(true):null:null}} className="clientForm-nextButton">Next <GrLinkNext color="white" className="clientForm-nextIcon"></GrLinkNext></button>
                     </li>
                     
                 </ul>
+
+
+                
             </div>
 
         </div>

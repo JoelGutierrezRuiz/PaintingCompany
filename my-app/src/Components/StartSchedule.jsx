@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import '../Styles/StartSchedule.css'
 import { AiFillPlayCircle } from 'react-icons/ai';
-import ClientForm from "./ClientForm";
 //imports
 
 function StartSchedule ({Page}){
