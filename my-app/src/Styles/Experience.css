@@ -143,8 +143,11 @@
     /*years*/
 
     .experience-years{
-        box-shadow:5px 5px 5px rgb(87, 87, 87) ;
+        box-shadow:5px 5px 5px rgba(255, 255, 255, 0.276) ;
         width: 100%;
+    }
+    .experience-years:hover{
+        box-shadow:5px 5px 5px rgba(255, 255, 255, 0.276) ;
     }
     .experience-years-number{
         font-size: 25px;
@@ -156,6 +159,11 @@
     /*clients*/
     .experience-clients{
         width: 100%;
+    }
+
+    .experience-clients:hover{
+        box-shadow:5px 5px 5px rgba(255, 255, 255, 0.276) ;
+
     }
     .experience-clients-text{
         font-size: 15px;
