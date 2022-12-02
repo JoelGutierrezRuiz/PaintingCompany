@@ -20,6 +20,12 @@
     object-fit: cover;
 }
 
+/*phone*/
+
+.welcome-phone{
+    position: absolute;
+}
+
 /*responsive*/
 @media only screen and (max-width: 1200px){
 
