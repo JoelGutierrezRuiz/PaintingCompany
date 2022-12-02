@@ -143,6 +143,7 @@
     /*years*/
 
     .experience-years{
+        box-shadow:5px 5px 5px rgb(87, 87, 87) ;
         width: 100%;
     }
     .experience-years-number{
