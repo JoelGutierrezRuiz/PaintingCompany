@@ -21,11 +21,48 @@
 }
 
 /*phone*/
-
-.welcome-phone{
+.welcome-phone-container{
+    display: flex;
+    flex-direction: column;
     position: absolute;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    width:500px;
+    height: 100px;
+    margin-bottom: 100px;
+
 }
 
+.welcome-phone-icon{
+    cursor: pointer;
+    margin-bottom: 20px;
+    color: orange;
+    font-size: 100px;
+    animation: call 5s infinite;
+    transform:rotate(40deg);
+}
+
+@keyframes call{
+    0%{
+        transform:rotate(40deg);
+    }
+    50%{
+        transform:rotate(80deg);
+    }
+    100%{
+        transform:rotate(40deg);
+    }
+}
+
+
+
+.welcome-phone-text{
+    color: orange;
+    font-weight: 600;
+    font-size: 25px;
+    cursor: pointer;
+}
 /*responsive*/
 @media only screen and (max-width: 1200px){
 
