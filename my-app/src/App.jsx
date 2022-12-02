@@ -26,7 +26,7 @@ function App() {
         {
             page=="form"?<ClientForm active={active} setActive={setActive} Page={Page}></ClientForm>:null
         }
-        <img className='fixed-img' src={"fixed"}></img>
+        <img className='fixed-img' src="https://storage.googleapis.com/sealed-prod.appspot.com/1/2020/09/GettyImages-968891264_small-1024x684.jpg"></img>
         <section className='navigate'>
             <div className='navigate-responsive'>
                 <GiHamburgerMenu/>
