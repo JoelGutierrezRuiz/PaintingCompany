@@ -1,7 +1,7 @@
 //imports 
 import React from "react";
 import '../Styles/Welcome.css'
-import painter from '../Imagenes/painter.jpeg'
+//import painter from '../Imagenes/painter.jpeg'
 import Experience from "./Experience";
 //imports
 function Welcome (){
@@ -12,7 +12,7 @@ function Welcome (){
                 <p className="welcome-text-mini">Over more than a half a century, we’ve come to be Southern California’s center of knowledge, sales & service for fireplaces, fire pits & chimneys</p>
             </div>
             <Experience></Experience>
-            <img className="welcome-img" src={painter}></img>
+            <img className="welcome-img" src={"painter"}></img>
            
             
         </div>

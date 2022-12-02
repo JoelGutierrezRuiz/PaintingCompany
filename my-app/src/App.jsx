@@ -1,15 +1,12 @@
 //imports
 import { useState } from 'react'
-import Header from './Components/Header';
-import Safety from './Components/Safety';
 import StartSchedule from './Components/StartSchedule';
 import Welcome from './Components/Welcome';
 import {GiHamburgerMenu} from 'react-icons/gi'
 import './Styles/App.css'
-import logo from './Imagenes/logo.png'
 import Footer from './Components/Footer';
 import Reviews from './Components/Reviews';
-import fixed from './Imagenes/fixed.jpg'
+//import fixed from './Imagenes/fixed.jpg'
 import ClientForm from './Components/Form/ClientForm';
 //imports
 function App() {
@@ -29,7 +26,7 @@ function App() {
         {
             page=="form"?<ClientForm active={active} setActive={setActive} Page={Page}></ClientForm>:null
         }
-        <img className='fixed-img' src={fixed}></img>
+        <img className='fixed-img' src={"fixed"}></img>
         <section className='navigate'>
             <div className='navigate-responsive'>
                 <GiHamburgerMenu/>

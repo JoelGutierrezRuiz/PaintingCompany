@@ -1,7 +1,7 @@
 //imports
 import React, { useEffect, useRef } from "react";
 import '../Styles/Footer.css'
-import paint from'../Videos/paintfalling.mp4'
+//import paint from'../Videos/paintfalling.mp4'
 import { AiOutlineInstagram } from 'react-icons/ai';
 import { AiFillLinkedin } from 'react-icons/ai';
 import {FaWhatsapp} from 'react-icons/fa'
@@ -22,7 +22,7 @@ function Footer ({Page}){
     
     return(
         <div className="mainContainer__footer">
-            <video className="video-footer-background"  loop src={paint} autoPlay muted></video>
+            <video className="video-footer-background"  loop src={"paint"} autoPlay muted></video>
             <div className="footer-company">
 
                 <div className="footer-company-logo">
