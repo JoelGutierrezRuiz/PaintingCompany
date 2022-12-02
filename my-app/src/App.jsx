@@ -21,12 +21,13 @@ function App() {
     setPage(pagina)
   }
 
+  const [active,setActive] = useState({home:null,comercial:null,both:null,interior:null,exterior:null})//objeto para el formulario y mantenerlo activo mientras se navega para no volver a poner la info del proyecto
 
   return (
 
     <div className='mainContainer-app'>
         {
-            page=="form"?<ClientForm Page={Page}></ClientForm>:null
+            page=="form"?<ClientForm active={active} setActive={setActive} Page={Page}></ClientForm>:null
         }
         <img className='fixed-img' src={fixed}></img>
         <section className='navigate'>

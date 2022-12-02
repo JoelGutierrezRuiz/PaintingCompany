@@ -133,6 +133,7 @@
 @media only screen and (max-width: 1200px){
     .mainContainer-years-clients{
         width:100%;
+        height:300px;
         display: flex;
         flex-direction: column;
         justify-content: center;

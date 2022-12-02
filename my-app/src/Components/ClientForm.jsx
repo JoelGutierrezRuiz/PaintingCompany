@@ -1,5 +1,5 @@
 //import
-import React from "react";
+import React, { useState } from "react";
 import '../Styles/ClientForm.css'
 import { IoMdClose } from 'react-icons/io';
 import { BsCheckCircleFill } from 'react-icons/bs';
@@ -7,7 +7,9 @@ import { GrLinkNext } from 'react-icons/gr';
 
 
 //import
-function ClientForm ({Page}){
+function ClientForm ({Page,active,setActive}){
+
+    
 
     return(
         <div className="mainContainer__clientForm">
@@ -22,8 +24,8 @@ function ClientForm ({Page}){
                         <div className="buttonType-container">
                             <p>What type of property needs painting?</p>
                             <div>
-                                <button>Home</button>
-                                <button>Bussines</button>
+                                <button onClick={()=>{setActive({...active,home:true,comercial:null})}} style={active.home?{backgroundColor:"#FF9000",color:"white",border:"none"}:null}>Home</button>
+                                <button onClick={()=>{setActive({...active,home:null,comercial:true})}} style={active.comercial?{backgroundColor:"#FF9000",color:"white",border:"none"}:null}>Bussines</button>
                             </div>
                             
                         </div>
@@ -35,9 +37,9 @@ function ClientForm ({Page}){
                         <div className="buttonType-container">
                             <p>What would you like to paint?</p>
                             <div>
-                                <button>Interior</button>
-                                <button>Exterior</button>
-                                <button>Both</button>
+                                <button onClick={()=>{setActive({...active,interior:true,exterior:null,both:null})}} style={active.interior?{backgroundColor:"#FF9000",color:"white",border:"none"}:null}>Interior</button>
+                                <button onClick={()=>{setActive({...active,interior:null,exterior:true,both:null})}} style={active.exterior?{backgroundColor:"#FF9000",color:"white",border:"none"}:null}>Exterior</button>
+                                <button onClick={()=>{setActive({...active,interior:null,exterior:null,both:true})}} style={active.both?{backgroundColor:"#FF9000",color:"white",border:"none"}:null}>Both</button>
                             </div>
                             
                         </div>
