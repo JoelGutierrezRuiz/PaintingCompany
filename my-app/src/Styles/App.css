@@ -21,7 +21,7 @@ body{
 
 .navigate{
     color: white;
-    position: sticky;
+    position: fixed;
     top: 0;
     background-color: #DC5C05;
     display:flex;
