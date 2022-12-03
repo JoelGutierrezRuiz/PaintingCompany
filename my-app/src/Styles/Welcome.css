@@ -32,7 +32,19 @@
     align-items: center;
     font-size: 25px;
     margin-bottom: 200px;
+    animation-name: showUp;
+    animation-duration: 1s;
 
+}
+
+@keyframes showUp{
+    0%{
+        margin-bottom: -200px;
+    }
+
+    100%{
+        margin-bottom: 200px;
+    }
 }
 
 .welcome-phone-icon{

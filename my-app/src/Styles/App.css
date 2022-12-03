@@ -12,6 +12,7 @@ body{
 }
 /*main*/
 .mainContainer-app{
+    overflow: hidden;
     height: 100%;
     position: relative;
 }
