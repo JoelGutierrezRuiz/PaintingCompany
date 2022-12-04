@@ -2,7 +2,7 @@
 .mainContainer__infoForm{
     width: 100%;
     overflow: auto;
-    height: 600px;
+    height: 100%;
     padding: 20px;
     background-color: rgb(214, 214, 214);
 }
