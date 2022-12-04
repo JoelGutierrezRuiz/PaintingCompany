@@ -28,7 +28,6 @@ button{
 }
 
 .startSchedule-button button{
-    margin-bottom: 150px;
     cursor: pointer;
     display: flex;
     align-items: center;
