@@ -94,6 +94,12 @@
 }
 
 @media only screen and (max-width: 600px){
+    /*main*/
+    .container__clientForm{
+        
+        margin-bottom: 80%;
+    }
+
     .container__clientForm{
         width: 100%;
         height: 400px;

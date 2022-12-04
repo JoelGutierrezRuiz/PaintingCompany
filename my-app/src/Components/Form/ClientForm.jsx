@@ -13,7 +13,7 @@ function ClientForm ({Page,active,setActive}){
     const [next,setNext]= useState(null);
     return(
         <div className="mainContainer__clientForm">
-            <div style={next?{height:"500px"}:null} className="container__clientForm">
+            <div style={next?{height:"500px"}:{marginBottom:"150px"}} className="container__clientForm">
                 <div className="clientForm__title">
                     <p className="clientForm__title-text">Project Information</p>
                     <IoMdClose onClick={()=>{Page("")}} className="close-form-icon"/>
