@@ -7,7 +7,7 @@
     justify-content: center;
     align-items: flex-start;
     width: 100%;
-    height: 100%;
+    height: 500px;
     background-color: rgba(118, 118, 118, 0.804);
 }
 /*container logo y directions flex*/
@@ -140,7 +140,7 @@
 @media only screen and (max-width: 1200px){
     /*main*/
     .mainContainer__footer{
-        height: 100vh;
+        height: 100%;
     }
     /*logo and social*/
     .footer-company{
