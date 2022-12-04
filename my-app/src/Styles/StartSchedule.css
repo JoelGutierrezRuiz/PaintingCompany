@@ -8,7 +8,7 @@
     justify-items: center;
     align-items: center;
     width: 100%;
-    height:350px;
+    height:450px;
     padding: 50px 0 50px 0;
 }
 /*text*/
@@ -57,5 +57,9 @@ button{
     /*button*/
     .startSchedule-button button{
         margin-top: 30px;
+    }
+    /*text*/
+    .startSchedule-text{
+        margin-top: 50px;
     }
 }
