@@ -16,16 +16,19 @@
 
 
 /*ul text*/
-.infoForm-ul-text{
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
+
 
 
 /*li*/
 
+.infoForm-list-container{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 .infoForm-list-input{
     width: 100%;
+    
 }
 .infoForm-list-input input{
     padding:5px 0px 5px 10px;
