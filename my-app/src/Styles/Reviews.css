@@ -52,11 +52,12 @@
     /*main*/
     .mainContainer__reviews{
         padding: 100px 0 100px 0;
-        height:950px;
+        height:600px;
         width: 100%;
     }
     /*review container*/
     .review-container{
+        height: 100%;
         width: 80%;
         border-left:none;
         border-right:none;
