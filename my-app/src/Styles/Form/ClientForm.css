@@ -1,5 +1,6 @@
 /*main*/
 .mainContainer__clientForm{
+    
     background-color: rgba(145, 145, 145, 0.833);
     position: fixed;
     z-index: 10000;

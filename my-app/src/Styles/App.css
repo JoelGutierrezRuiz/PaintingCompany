@@ -12,9 +12,10 @@ body{
 }
 /*main*/
 .mainContainer-app{
-    overflow: hidden;
-    height: 100%;
+    width: 100%;
+    height: 100vh;
     position: relative;
+    background-color: red;
 }
 
 /*navigate main*/

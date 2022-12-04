@@ -22,7 +22,7 @@ function App() {
 
   return (
 
-    <div className='mainContainer-app'>
+    <div className='mainContainer-app' style={page=="form"?{overflowY:"hidden"}:null}>
         {
             page=="form"?<ClientForm active={active} setActive={setActive} Page={Page}></ClientForm>:null
         }
