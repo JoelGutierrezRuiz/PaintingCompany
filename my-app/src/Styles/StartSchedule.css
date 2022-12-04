@@ -28,7 +28,7 @@ button{
 }
 
 .startSchedule-button button{
-    
+    margin-bottom: 150px;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -52,7 +52,7 @@ button{
 @media only screen and (max-width: 1200px){
     .mainContainer___startSchedule{
         margin-top: 40px;
-        height: 500px;
+        height: 80%;
     }
     /*button*/
     .startSchedule-button button{
