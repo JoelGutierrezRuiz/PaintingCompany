@@ -21,6 +21,7 @@ body{
 /*navigate main*/
 
 .navigate{
+    
     color: white;
     position: fixed;
     top: 0;
@@ -29,7 +30,7 @@ body{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 80px;
+    height: 65px;
     cursor: pointer;
     z-index: 100;
 }
@@ -119,7 +120,12 @@ body{
 }
 
 @media only screen and (max-width: 1200px){
-    /*main navigate*/
+
+    /*main general navigate*/
+    .navigate{
+        padding: 20px;
+    }
+    /*main navigate normal*/
     .mainContainer__navigate{
         display:none;
     }
@@ -134,7 +140,6 @@ body{
     /*div logo text company*/
     .navigate-responsive-logo-text-mainContainer{
         display: flex;
-        margin-left:20px;
     }
     .navigate-responsive-logo-text-container{
 
@@ -143,9 +148,13 @@ body{
         align-items: center;
     }
     .navigate-responsive-logo-text-h2{
+        font-size: 20px;
         padding-bottom: 2px;
         margin-bottom: 5px;
         border-bottom: 1px solid white;
+    }
+    .navigate-responsive-logo-text-p{
+        font-size: 12px;
     }
     /*logo navigate responsive*/
     .navigate-responsive-logo{
@@ -157,14 +166,14 @@ body{
     /*icon responsive menu*/
 
     .navigate-responsive-icon-container{
-        width: 35px;
-        height: 35px;
+        width: 30px;
+        height: 30px;
         display: flex;
         justify-content: center;
         align-items: center;
         border-radius: 5px;
         margin-right: 15px;
-        font-size: 25px;
+        font-size: 15px;
         color: #DC5C05;
         background-color: white;
         
