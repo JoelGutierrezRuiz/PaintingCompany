@@ -28,8 +28,20 @@ function App() {
         }
         <img className='fixed-img' src="https://storage.googleapis.com/sealed-prod.appspot.com/1/2020/09/GettyImages-968891264_small-1024x684.jpg"></img>
         <section className='navigate'>
+
             <div className='navigate-responsive'>
-                <GiHamburgerMenu/>
+                
+                <div className='navigate-responsive-logo-text-mainContainer'>
+                    <img className="navigate-responsive-logo" src={"https://cryptologos.cc/logos/aave-aave-logo.png"}></img>
+                    <div className='navigate-responsive-logo-text-container'>
+                        <h2 className='navigate-responsive-logo-text-h2'>A+ Painting</h2>
+                        <p className='navigate-responsive-logo-text-p'>By JGroup</p>
+                    </div>
+                    
+                </div>
+                <div className='navigate-responsive-icon-container'><GiHamburgerMenu className='navigate-responsive-icon'/>
+</div>
+                
             </div>
 
             <ul className='mainContainer__navigate'>
