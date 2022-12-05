@@ -134,7 +134,7 @@ body{
     /*div logo text company*/
     .navigate-responsive-logo-text-mainContainer{
         display: flex;
-        margin-left: 70px;
+        margin-left:20px;
     }
     .navigate-responsive-logo-text-container{
 
