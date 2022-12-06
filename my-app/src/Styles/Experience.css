@@ -194,6 +194,7 @@
         font-size: 25px;
     }
     .experience-years-text{
+        
         font-size: 15px;
 
     }
@@ -212,4 +213,23 @@
     .experience-clients-number{
         font-size: 25px;
     }
+}
+
+
+@media only screen and (max-width: 350px){
+
+    /*exp clients*/
+    .experience-clients-text{
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    /*exp years text*/
+    .experience-years-text{
+        
+        font-size: 12px;
+        font-weight: 600;
+
+    }
+
 }
