@@ -8,11 +8,14 @@ import Footer from './Components/Footer';
 import Reviews from './Components/Reviews';
 //import fixed from './Imagenes/fixed.jpg'
 import ClientForm from './Components/Form/ClientForm';
+import ResponsiveMenu from './Components/ResponsiveMenu';
 //imports
 function App() {
   const [count, setCount] = useState(0)
 
   const [page,setPage] = useState("");
+
+  const [menu,setMenu] = useState (null)
 
   const Page = (pagina)=>{
     setPage(pagina)
@@ -23,10 +26,20 @@ function App() {
   return (
 
     <div className='mainContainer-app' style={page=="form"?{overflowY:"hidden"}:null}>
+        
+        {
+            menu?<ResponsiveMenu setMenu={setMenu}></ResponsiveMenu>:null
+        }
+
+
         {
             page=="form"?<ClientForm active={active} setActive={setActive} Page={Page}></ClientForm>:null
         }
+
+
         <img className='fixed-img' src="https://storage.googleapis.com/sealed-prod.appspot.com/1/2020/09/GettyImages-968891264_small-1024x684.jpg"></img>
+
+
         <section className='navigate'>
 
             <div className='navigate-responsive'>
@@ -39,8 +52,9 @@ function App() {
                     </div>
                     
                 </div>
-                <div className='navigate-responsive-icon-container'><GiHamburgerMenu className='navigate-responsive-icon'/>
-</div>
+                <div className='navigate-responsive-icon-container'>
+                    <GiHamburgerMenu onClick={()=>{setMenu(true)}} className='navigate-responsive-icon'/>
+                </div>
                 
             </div>
 
@@ -74,6 +88,8 @@ function App() {
                 <li className='navigate-li'>ABOUT US</li>
             </ul>
         </section>
+
+
         <Welcome></Welcome>
         <StartSchedule Page={Page}></StartSchedule>
         <Reviews></Reviews>
