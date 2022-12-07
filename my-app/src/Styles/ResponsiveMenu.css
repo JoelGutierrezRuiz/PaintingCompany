@@ -5,7 +5,7 @@
     position: fixed;
     width: 25%;
     height: 110%;
-    animation:showUpResponsiveMenu 2s;
+    animation:showUpResponsiveMenu .5s;
 
 }
 
@@ -54,7 +54,7 @@
     .mainContainer__responsiveMenu{
         width: 100%;
         animation-name:showUpResponsiveMenuMobile;
-        animation-duration:1s;
+        animation-duration:.5s;
     }
 
     @keyframes showUpResponsiveMenuMobile {
