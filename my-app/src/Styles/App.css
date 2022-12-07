@@ -7,14 +7,11 @@
     font-family: sans-serif;
 }
 
-body{
-    background-color: #474747c7;
-}
+
 /*main*/
 .mainContainer-app{
     width: 100%;
     height: 100vh;
-    background-color: red;
 }
 
 /*navigate main*/
@@ -36,6 +33,7 @@ body{
 
 
 .navigate-li{
+    margin-left: 30px;
     position: relative;
     flex: 1;
     display: flex;
@@ -52,55 +50,40 @@ body{
     height: 100%;
     display: flex;
 }
-/*Ampliation hover*/
 
-.ampliation{
-  
-    position: absolute;
-    top: 50px;
-    width: 100%;
-    height: 80px;
-    background-color: #413939;
-    display: none;
-}
 
-.ampliation-list{
-    list-style: none;
-    margin:5px 0 5px 10px;
-}
-.ampliation-li{
-    width: 100%;
-    display: inline-block;
-}
-.ampliation-li:hover{
-    background-color:#333333 ;
-    color:#FDB913;
-}
 
-.navigate-li:hover{
-    background-color:#333333;
-    color: white;
-}
-
-.navigate-li--comercial:hover>.ampliation{
-    display: flex; 
-}
-
-.navigate-li--residential:hover>.ampliation{
-    display: flex;
-
-}
 
 /*logo*/
-.navigate-logo{
+
+.navigate-li--logo{
     position: absolute;
-    left: 100px;
+    left: 0%;
+    margin-left:50px ;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+.navigate-logo-text-mainContainer{
+    display: flex;
 }
 
-.logo-header{
+.navigate-logo-text-container{
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+}
+
+.navigate-li--logo img{
     width: 50px;
     height: 50px;
     object-fit: contain;
+}
+
+.navigate-logo{
+    margin-right: 10px;
 }
 
 
@@ -176,7 +159,18 @@ body{
         font-size: 15px;
         color: #DC5C05;
         background-color: white;
+        animation-name:showUpResponsiveIcon ;
+        animation-duration: 1s;
         
+    }
+    @keyframes showUpResponsiveIcon {
+        0%{
+            margin-right: -100px;
+        }
+
+        100%{
+            margin-right: 15px;
+        }
     }
     
     /**/

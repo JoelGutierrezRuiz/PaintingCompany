@@ -60,33 +60,37 @@ function App() {
             </div>
 
             <ul className='mainContainer__navigate'>
-                <li className='navigate-li navigate-li--residential'>
-                    RESIDENDENTIAL PAINTING
-                    <div className='ampliation'>
-                        <ul className='ampliation-list'>
-                                <li className='ampliation-li'>Interior Painting</li>
-                                <li className='ampliation-li'>Exterior Painting</li>
-                                <li className='ampliation-li'>Services</li>
-                            </ul>
+                <li className='navigate-li--logo'>
+
+                    <div className='navigate-logo-text-mainContainer'>
+                        <img className="navigate-logo" src={"https://cryptologos.cc/logos/aave-aave-logo.png"}></img>
+                        <div className='navigate-logo-text-container'>
+                            <h2 className='navigate-logo-text-h2'>A+ Painting</h2>
+                            <p className='navigate-logo-text-p'>By JGroup</p>
                     </div>
+                    
+                </div>
+                </li>
+
+                <li className='navigate-li navigate-li--residential'>
+
+                    <p>RESIDENDENTIAL PAINTING</p>
                 </li>
 
                 <li className='navigate-li navigate-li--comercial'>
-                    COMERCIAL PAINTING
-                    <div className='ampliation'>
-                        <ul className='ampliation-list'>
-                            <li className='ampliation-li'>Services</li>
-                            <li className='ampliation-li'>National Accounts</li>
-                            <li className='ampliation-li'>Case Studies</li>
-                        </ul>
-                    </div>
+
+                    <p>COMERCIAL PAINTING</p>
+                    
                 </li>
 
                 <li className='navigate-li'>
-                    REVIEWS
+                    <p>REVIEWS</p>
+            
                 </li>
 
-                <li className='navigate-li'>ABOUT US</li>
+                <li className='navigate-li'>
+                    <p>ABOUT US</p> 
+                </li>
             </ul>
         </section>
 
