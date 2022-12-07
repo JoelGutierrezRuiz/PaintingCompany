@@ -52,6 +52,7 @@ function App() {
                     </div>
                     
                 </div>
+                
                 <div onClick={()=>{setMenu(true)}} className='navigate-responsive-icon-container'>
                     <GiHamburgerMenu  className='navigate-responsive-icon'/>
                 </div>
