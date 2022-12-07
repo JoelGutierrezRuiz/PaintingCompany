@@ -63,9 +63,3 @@ button{
     }
 }
 
-@media only screen and (max-width: 350px){
-    .startSchedule-text{
-        font-size: 15px;
-        margin-top: -50px;
-    }
-}
