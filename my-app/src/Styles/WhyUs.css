@@ -1,0 +1,69 @@
+
+/*main*/
+.mainContainer__whyUs{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-top: 1px solid orange;
+    border-bottom: 1px solid orange;
+}
+
+/*title why us*/
+.whyUs-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    height: 100px;
+}
+
+/*container*/
+.container-whyUs{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 100px;
+     
+    display: flex;
+
+}
+
+/*whyUS why*/
+
+.whyUs-why{
+    position: relative;
+    width: 25%;
+    height: 100%;
+}
+/*imgs*/
+
+.whyUs-why img{
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*container text*/
+.why-container{
+    padding: 25px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.486);
+}
+
+.why-container p {
+    text-align: center;
+    color: white;
+}
+
+
+/*responsive*/
+
+@media only screen and (max-width: 1200px){}

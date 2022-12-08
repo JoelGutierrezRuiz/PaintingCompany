@@ -9,6 +9,8 @@ import Reviews from './Components/Reviews';
 import ClientForm from './Components/Form/ClientForm';
 import './Styles/ResponsiveMenu.css'
 import { IoMdClose } from 'react-icons/io';
+import ResidentialPainting from './Components/ResidentialPainting';
+import WhyUS from './Components/WhyUs';
 
 //imports
 function App() {
@@ -133,10 +135,11 @@ function App() {
                 <>
                     <Welcome></Welcome>
                     <StartSchedule Page={Page}></StartSchedule>
+                    <WhyUS></WhyUS>
                     <Reviews></Reviews>
                 </>
             :link=="residential"?
-                <Reviews></Reviews>
+                <ResidentialPainting></ResidentialPainting>
             :link=="comercial"?
                 <Welcome></Welcome>
             :null
