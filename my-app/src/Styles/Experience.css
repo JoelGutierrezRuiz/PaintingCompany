@@ -27,7 +27,7 @@
     font-size: 35px;
 }
 .experience-years{
-    
+
     cursor: pointer;
     height: 100%;
     display: flex;
@@ -54,7 +54,7 @@
 }
 
 .experience-years-plus{
-    
+    margin-left: 5px;
     font-size: 35px;
 }
 .experience-years-text{
@@ -100,7 +100,9 @@
     box-shadow:5px 5px 5px rgb(87, 87, 87) ;
 }
 
-
+.experience-clients-plus{
+    margin-left: 5px;
+}
 .experience-clients-text{
     align-self: flex-end;
     margin-bottom: 25px;

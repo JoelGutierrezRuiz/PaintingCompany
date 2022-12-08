@@ -6,9 +6,11 @@ import {GiHamburgerMenu} from 'react-icons/gi'
 import './Styles/App.css'
 import Footer from './Components/Footer';
 import Reviews from './Components/Reviews';
-//import fixed from './Imagenes/fixed.jpg'
+import {Link,Route,Routes} from 'react-router-dom'
 import ClientForm from './Components/Form/ClientForm';
-import ResponsiveMenu from './Components/ResponsiveMenu';
+import './Styles/ResponsiveMenu.css'
+import { IoMdClose } from 'react-icons/io';
+
 //imports
 function App() {
   const [count, setCount] = useState(0)
@@ -28,7 +30,33 @@ function App() {
     <div className='mainContainer-app' style={page=="form"?{overflowY:"hidden"}:null}>
         
         {
-            menu?<ResponsiveMenu setMenu={setMenu}></ResponsiveMenu>:null
+            menu?
+
+                <div 
+                    className="mainContainer__responsiveMenu">
+                <ul className="responsiveMenu-list-container">
+                    
+                    <li className="responsiveMenu-list-close responseiveMenu-list-item"><IoMdClose onClick={()=>{setMenu(null)}}  className="responsiveMenu-close-icon "></IoMdClose></li>
+                    
+                    
+                    <li className="responseiveMenu-list-item">
+                    <Link onClick={()=>{setMenu(null)}} to={"/Residential-Painting"}>RESIDENDENTIAL PAINTING</Link>
+                    </li>
+                    
+                    
+                    
+                    <li className="responseiveMenu-list-item">
+                        <Link onClick={()=>{setMenu(null)}} to={"/Comercial-Painting"}>COMERCIAL PAINTING</Link>
+                    </li>
+                    
+
+                    <li className="responseiveMenu-list-item"><p>Reviews</p></li>
+                    <li className="responseiveMenu-list-item"><p>About Us</p></li>
+
+                </ul>
+                </div>
+            
+            :null
         }
 
 
@@ -43,7 +71,7 @@ function App() {
         <section className='navigate'>
 
             <div className='navigate-responsive'>
-                
+                <Link to={"/"}>
                 <div className='navigate-responsive-logo-text-mainContainer'>
                     <img className="navigate-responsive-logo" src={"https://cryptologos.cc/logos/aave-aave-logo.png"}></img>
                     <div className='navigate-responsive-logo-text-container'>
@@ -52,6 +80,7 @@ function App() {
                     </div>
                     
                 </div>
+                </Link>
                 
                 <div onClick={()=>{setMenu(true)}} className='navigate-responsive-icon-container'>
                     <GiHamburgerMenu  className='navigate-responsive-icon'/>
@@ -60,26 +89,29 @@ function App() {
             </div>
 
             <ul className='mainContainer__navigate'>
+                <Link to={"/"}>
                 <li className='navigate-li--logo'>
 
                     <div className='navigate-logo-text-mainContainer'>
                         <img className="navigate-logo" src={"https://cryptologos.cc/logos/aave-aave-logo.png"}></img>
+
                         <div className='navigate-logo-text-container'>
                             <h2 className='navigate-logo-text-h2'>A+ Painting</h2>
                             <p className='navigate-logo-text-p'>By JGroup</p>
-                    </div>
+                        </div>
                     
-                </div>
+                    </div>
                 </li>
+                </Link>
 
                 <li className='navigate-li navigate-li--residential'>
 
-                    <p>RESIDENDENTIAL PAINTING</p>
+                    <Link to={"/residential-Painting"}>RESIDENDENTIAL PAINTING</Link>
+
                 </li>
 
                 <li className='navigate-li navigate-li--comercial'>
-
-                    <p>COMERCIAL PAINTING</p>
+                    <Link to={"/Comercial-Painting"}>COMERCIAL PAINTING</Link>
                     
                 </li>
 
@@ -95,10 +127,24 @@ function App() {
         </section>
 
 
-        <Welcome></Welcome>
-        <StartSchedule Page={Page}></StartSchedule>
-        <Reviews></Reviews>
-        <Footer Page={Page}></Footer>
+
+
+        <Routes>
+            <Route path='/' element={
+                
+                <div>            
+                    <Welcome></Welcome>
+                    <StartSchedule Page={Page}></StartSchedule>
+                    <Reviews></Reviews>
+                    <Footer Page={Page}></Footer>
+                </div>}>
+
+            </Route>
+
+            <Route path="/residential-Painting" element={<Reviews></Reviews>}></Route>
+        </Routes>
+
+
     </div>
    );
 }
