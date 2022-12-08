@@ -6,7 +6,6 @@ import {GiHamburgerMenu} from 'react-icons/gi'
 import './Styles/App.css'
 import Footer from './Components/Footer';
 import Reviews from './Components/Reviews';
-import {Link,Route,Routes} from 'react-router-dom'
 import ClientForm from './Components/Form/ClientForm';
 import './Styles/ResponsiveMenu.css'
 import { IoMdClose } from 'react-icons/io';
@@ -19,11 +18,13 @@ function App() {
 
   const [menu,setMenu] = useState (null)
 
+  const [link,setLink]= useState ("home")
+
   const Page = (pagina)=>{
     setPage(pagina)
   }
 
-  const [active,setActive] = useState({home:null,comercial:null,both:null,interior:null,exterior:null})//objeto para el formulario y mantenerlo activo mientras se navega para no volver a poner la info del proyecto
+  const [active,setActive] = useState("home")//objeto para el formulario y mantenerlo activo mientras se navega para no volver a poner la info del proyecto
 
   return (
 
@@ -39,14 +40,14 @@ function App() {
                     <li className="responsiveMenu-list-close responseiveMenu-list-item"><IoMdClose onClick={()=>{setMenu(null)}}  className="responsiveMenu-close-icon "></IoMdClose></li>
                     
                     
-                    <li className="responseiveMenu-list-item">
-                    <Link onClick={()=>{setMenu(null)}} to={"/Residential-Painting"}>RESIDENDENTIAL PAINTING</Link>
+                    <li onClick={()=>{setLink("residential");setMenu(null)}} className="responseiveMenu-list-item">
+                        <p>RESIDENDENTIAL PAINTING</p>
                     </li>
                     
                     
                     
-                    <li className="responseiveMenu-list-item">
-                        <Link onClick={()=>{setMenu(null)}} to={"/Comercial-Painting"}>COMERCIAL PAINTING</Link>
+                    <li onClick={()=>{setLink("comercial");setMenu(null)}} className="responseiveMenu-list-item">
+                        <p  >COMERCIAL PAINTING</p>
                     </li>
                     
 
@@ -71,8 +72,8 @@ function App() {
         <section className='navigate'>
 
             <div className='navigate-responsive'>
-                <Link to={"/"}>
-                <div className='navigate-responsive-logo-text-mainContainer'>
+
+                <div onClick={()=>{setLink("home")}} className='navigate-responsive-logo-text-mainContainer'>
                     <img className="navigate-responsive-logo" src={"https://cryptologos.cc/logos/aave-aave-logo.png"}></img>
                     <div className='navigate-responsive-logo-text-container'>
                         <h2 className='navigate-responsive-logo-text-h2'>A+ Painting</h2>
@@ -80,7 +81,7 @@ function App() {
                     </div>
                     
                 </div>
-                </Link>
+
                 
                 <div onClick={()=>{setMenu(true)}} className='navigate-responsive-icon-container'>
                     <GiHamburgerMenu  className='navigate-responsive-icon'/>
@@ -89,8 +90,8 @@ function App() {
             </div>
 
             <ul className='mainContainer__navigate'>
-                <Link to={"/"}>
-                <li className='navigate-li--logo'>
+
+                <li onClick={()=>{setLink("home")}} className='navigate-li--logo'>
 
                     <div className='navigate-logo-text-mainContainer'>
                         <img className="navigate-logo" src={"https://cryptologos.cc/logos/aave-aave-logo.png"}></img>
@@ -102,16 +103,17 @@ function App() {
                     
                     </div>
                 </li>
-                </Link>
 
-                <li className='navigate-li navigate-li--residential'>
 
-                    <Link to={"/residential-Painting"}>RESIDENDENTIAL PAINTING</Link>
+                <li onClick={()=>{setLink("residential")}} className='navigate-li navigate-li--residential'>
+
+                    <p>RESIDENDENTIAL PAINTING</p>
 
                 </li>
 
-                <li className='navigate-li navigate-li--comercial'>
-                    <Link to={"/Comercial-Painting"}>COMERCIAL PAINTING</Link>
+                <li onClick={()=>{setLink("comercial")}}  className='navigate-li navigate-li--comercial'>
+                    
+                    <p>COMERCIAL PAINTING</p>
                     
                 </li>
 
@@ -126,24 +128,21 @@ function App() {
             </ul>
         </section>
 
-
-
-
-        <Routes>
-            <Route path='/' element={
-                
-                <div>            
+        {
+            link=="home"?
+                <>
                     <Welcome></Welcome>
                     <StartSchedule Page={Page}></StartSchedule>
                     <Reviews></Reviews>
-                    <Footer Page={Page}></Footer>
-                </div>}>
-
-            </Route>
-
-            <Route path="/residential-Painting" element={<Reviews></Reviews>}></Route>
-        </Routes>
-
+                </>
+            :link=="residential"?
+                <Reviews></Reviews>
+            :link=="comercial"?
+                <Welcome></Welcome>
+            :null
+        }
+           
+         <Footer Page={Page}></Footer>
 
     </div>
    );
