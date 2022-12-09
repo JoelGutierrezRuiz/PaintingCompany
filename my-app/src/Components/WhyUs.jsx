@@ -18,18 +18,18 @@ function WhyUS (){
             <div className="container-whyUs">
                 <div className="whyUs-why">
                     <img src={img.estimate}></img>
-                    <div className="why-container"><p>We dont change our stimate in any case.</p></div>
+                    <div className="why-container"><p>We dont change our stimate</p></div>
                 </div>
 
                 <div className="whyUs-why">
                     <img src={img.apluswork}></img>
-                    <div className="why-container"><p>Our commitment is live an A+ work no matter what</p></div>
+                    <div className="why-container"><p>Our commitment is an A+ finish</p></div>
                     
                 </div>
 
                 <div className="whyUs-why">
                     <img src={img.contractor}></img>
-                    <div className="why-container"><p>We are a state licensed contractor and carry general liability</p></div>
+                    <div className="why-container"><p>We are a state licensed contractor</p></div>
                 </div>
 
                 <div className="whyUs-why">
