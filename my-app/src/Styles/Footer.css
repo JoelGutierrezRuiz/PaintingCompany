@@ -23,6 +23,7 @@
 /*logo with icons container*/
 .footer-company-logo{
     padding-top: 40px;
+    align-items: center;
     width: 200px;
     display: flex;
     flex-direction: column;
@@ -30,8 +31,8 @@
 
 /*logo*/
 .footer-logo{
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
 }
 
 /*icons list*/
@@ -46,6 +47,7 @@
 .footer-icon{
     color: white;
     font-size: 25px;
+    margin-right: 10px;
 
 }
 
@@ -164,3 +166,24 @@
     }
     
 }
+
+
+
+@media only screen and (max-width: 370px){
+    
+    /*logo*/
+    .footer-company-logo{
+        padding-top: 0;
+    }
+
+    .footer-logo{
+        width: 100px;
+        height: 100px;
+    }
+
+    
+
+    
+}
+
+

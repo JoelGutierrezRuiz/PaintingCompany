@@ -62,6 +62,7 @@
 /*why us why text*/
 
 .whyUs-why-title{
+    text-align: center;
     margin-bottom: 15px;
     font-size: 40px;
     color: white;
@@ -112,6 +113,17 @@
     .whyUs-why-container{
         width: 100%;
         left: 0;
+    }
+
+    /*why us why text*/
+
+    .whyUs-why-title{
+        font-size: 25px;
+    }
+
+    .whyUs-why{
+        text-align: center;
+        font-size: 15px;
     }
 }
 
