@@ -22,10 +22,11 @@ function WhyUS (){
                 <div className="whyUs-why-container">
                     <ul className="whyUs-why-list">
                         <div>
-                            <li className="whyUs-why"><p>We dont change our stimate</p></li>
-                            <li className="whyUs-why"><p>Our commitment is an A+ work</p></li>
-                            <li className="whyUs-why"><p>We are a state licensed contractor</p></li>
-                            <li className="whyUs-why"><p>We use the best quality products</p></li>
+                            <li className="whyUs-why-title"><p>Here are some reasons</p></li>
+                            <li className="whyUs-why"><p>- We dont change our stimate</p></li>
+                            <li className="whyUs-why"><p>- Our commitment is an A+ work</p></li>
+                            <li className="whyUs-why"><p>- We are a state licensed contractor</p></li>
+                            <li className="whyUs-why"><p>- We use the best quality products</p></li>
                         </div>
 
                     </ul>
