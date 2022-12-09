@@ -14,28 +14,23 @@ function WhyUS (){
         <div className="mainContainer__whyUs">
 
             <p className="whyUs-title">Why Us ?</p>
-
+            
             <div className="container-whyUs">
-                <div className="whyUs-why">
-                    <img src={img.estimate}></img>
-                    <div className="why-container"><p>We dont change our stimate</p></div>
+                
+                <img className="whyUs-img" src="https://certapro.com/pittsburgh-south/wp-content/uploads/sites/1323/2019/08/certapro-painters-interior-painting.jpg"></img>  
+
+                <div className="whyUs-why-container">
+                    <ul className="whyUs-why-list">
+                        <div>
+                            <li className="whyUs-why"><p>We dont change our stimate</p></li>
+                            <li className="whyUs-why"><p>Our commitment is an A+ work</p></li>
+                            <li className="whyUs-why"><p>We are a state licensed contractor</p></li>
+                            <li className="whyUs-why"><p>We use the best quality products</p></li>
+                        </div>
+
+                    </ul>
                 </div>
 
-                <div className="whyUs-why">
-                    <img src={img.apluswork}></img>
-                    <div className="why-container"><p>Our commitment is an A+ finish</p></div>
-                    
-                </div>
-
-                <div className="whyUs-why">
-                    <img src={img.contractor}></img>
-                    <div className="why-container"><p>We are a state licensed contractor</p></div>
-                </div>
-
-                <div className="whyUs-why">
-                    <img src={img.quality}></img>
-                    <div className="why-container"><p>We use the best quality products</p></div>
-                </div>
             </div>
         </div>
     )
