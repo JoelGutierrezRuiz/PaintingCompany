@@ -40,6 +40,7 @@
     justify-content: center;
     align-items: center;
     height: 100%;
+    font-size: 15px;
 }
 
 .mainContainer__navigate{
@@ -125,13 +126,13 @@
         display: flex;
     }
     .navigate-responsive-logo-text-container{
-
+        justify-content: center;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
     .navigate-responsive-logo-text-h2{
-        font-size: 20px;
+        font-size: 17px;
         padding-bottom: 2px;
         margin-bottom: 5px;
         border-bottom: 1px solid white;
