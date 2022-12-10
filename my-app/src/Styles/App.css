@@ -77,6 +77,10 @@
     flex-direction:column;
 }
 
+.navigate-logo-text-h2{
+    border-bottom: 1px solid white;
+}
+
 .navigate-li--logo img{
     width: 50px;
     height: 50px;

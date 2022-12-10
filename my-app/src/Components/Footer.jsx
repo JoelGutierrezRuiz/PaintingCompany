@@ -22,7 +22,7 @@ function Footer ({Page}){
     
     return(
         <div className="mainContainer__footer">
-            <video className="video-footer-background"  loop src={paint} autoPlay muted></video>
+            <video className="video-footer-background"  playsinline  loop src={paint} autoPlay muted></video>
             <div className="footer-company">
 
                 <div className="footer-company-logo">
@@ -36,8 +36,12 @@ function Footer ({Page}){
                 </div>
 
                 <div className="footer-direction-container">
-                    <p className="footer-direction"> <BiMap className="footer-direction-icon"/>6729-6601 Yarmouth Ave, Reseda, CA 91335</p>
-                    <p className="footer-phone"><BsPhone className="footer-phone-icon"/> +1 (818) 660-7669</p> 
+                    <p className="footer-direction"> <BiMap className="footer-direction-icon"/>
+                        <a href="https://goo.gl/maps/eV4RVnFxq8p7QNuJ7" target={"_blank"}>6729-6601 Yarmouth Ave, Reseda, CA 91335</a>
+                    </p>
+                    <p className="footer-phone"><BsPhone className="footer-phone-icon"/>
+                        <a href="tel:+1 (818) 660-7669"> +1 (818) 660-7669</a>
+                    </p> 
                     <div className="footer-schedule-button-container"></div> 
                     <button onClick={()=>{Page("form")}} className="footer-schedule-button">ESTIMATE YOUR PROJECT</button>
                 </div>
