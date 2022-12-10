@@ -63,9 +63,8 @@ button{
     }
 }
 
-@media only screen and (max-height: 800px){
+@media only screen and (max-height: 900px){
     .mainContainer___startSchedule{
-        margin-top: 40px;
         height:700px;
     }
 }
