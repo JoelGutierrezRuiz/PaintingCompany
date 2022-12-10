@@ -108,20 +108,20 @@ function App() {
                 </li>
 
 
-                <li onClick={()=>{setLink("residential")}} className='navigate-li navigate-li--residential'>
+                <li onClick={()=>{setLink("home")}} className='navigate-li navigate-li--residential'>
 
-                    <p>RESIDENDENTIAL PAINTING</p>
+                    <p>Home</p>
 
                 </li>
 
-                <li onClick={()=>{setLink("comercial")}}  className='navigate-li navigate-li--comercial'>
+                <li onClick={()=>{setLink("residential")}}  className='navigate-li navigate-li--comercial'>
                     
-                    <p>COMERCIAL PAINTING</p>
+                    <p>Residential Painting</p>
                     
                 </li>
 
-                <li className='navigate-li'>
-                    <p>REVIEWS</p>
+                <li onClick={()=>{setLink("comercial")}} className='navigate-li'>
+                    <p>Comercial Painting</p>
             
                 </li>
 
