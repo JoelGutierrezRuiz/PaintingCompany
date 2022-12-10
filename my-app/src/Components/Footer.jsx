@@ -38,7 +38,7 @@ function Footer ({Page}){
                 <div className="footer-direction-container">
                     <p className="footer-direction"> 
                         <BiMap className="footer-direction-icon"/>
-                        <a href="https://goo.gl/maps/eV4RVnFxq8p7QNuJ7" target={"_blank"}>6729-6601 Yarmouth Ave, Reseda, CA 91335</a>
+                        <a href="https://goo.gl/maps/eV4RVnFxq8p7QNuJ7" target={"_blank"}>Click to see our direction</a>
                     </p>
                     <p className="footer-phone"><BsPhone className="footer-phone-icon"/>
                         <a href="tel:+1 (818) 660-7669"> +1 (818) 660-7669</a>
