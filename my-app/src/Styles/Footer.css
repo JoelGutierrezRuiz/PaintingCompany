@@ -68,6 +68,12 @@
     
 }
 
+.footer-direction a{
+    text-decoration: none;
+    color: white;
+    
+}
+
 .footer-direction-icon{
     color: #FF9000;
     margin-right: 20px;
@@ -78,6 +84,10 @@
     margin-right: 20px;
 }
 
+.footer-phone a{
+    text-decoration: none;
+    color: white;
+}
 
 .footer-schedule-button-container{
     padding-top: 30px;
@@ -119,7 +129,10 @@
     border-right:2px solid white ;
     margin-right: 20px;
     cursor: pointer;
+
 }
+
+
 
 .woodWork{
     border-right:none;   

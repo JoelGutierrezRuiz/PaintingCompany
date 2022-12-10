@@ -41,19 +41,20 @@ function App() {
                     
                     <li className="responsiveMenu-list-close responseiveMenu-list-item"><IoMdClose onClick={()=>{setMenu(null)}}  className="responsiveMenu-close-icon "></IoMdClose></li>
                     
+                    <li onClick={()=>{setLink("home");setMenu(null)}} className="responseiveMenu-list-item">
+                        <p>Home</p>
+                    </li>
                     
                     <li onClick={()=>{setLink("residential");setMenu(null)}} className="responseiveMenu-list-item">
-                        <p>RESIDENDENTIAL PAINTING</p>
+                        <p>Residential Painting</p>
                     </li>
                     
                     
                     
                     <li onClick={()=>{setLink("comercial");setMenu(null)}} className="responseiveMenu-list-item">
-                        <p  >COMERCIAL PAINTING</p>
+                        <p  >Comercial Painting</p>
                     </li>
                     
-
-                    <li className="responseiveMenu-list-item"><p>Reviews</p></li>
                     <li className="responseiveMenu-list-item"><p>About Us</p></li>
 
                 </ul>
