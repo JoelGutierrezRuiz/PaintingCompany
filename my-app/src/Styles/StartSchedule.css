@@ -8,7 +8,7 @@
     justify-items: center;
     align-items: center;
     width: 100%;
-    height:250px;
+    height:550px;
     padding: 50px 0 50px 0;
 }
 /*text*/
@@ -62,8 +62,3 @@ button{
     }
 }
 
-@media only screen and (max-height: 900px){
-    .mainContainer___startSchedule{
-        height:700px;
-    }
-}
