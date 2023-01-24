@@ -23,10 +23,10 @@ function WhyUS (){
                     <ul className="whyUs-why-list">
                         <div>
                             <li className="whyUs-why-title"><p>Here are some reasons</p></li>
-                            <li className="whyUs-why"><p>- We dont change our stimate</p></li>
-                            <li className="whyUs-why"><p>- Our commitment is an A+ work</p></li>
-                            <li className="whyUs-why"><p>- We are a state licensed contractor</p></li>
-                            <li className="whyUs-why"><p>- We use the best quality products</p></li>
+                            <li className="whyUs-why"><p>1. Experience: With years of experience in the painting industry, our team has the skills and knowledge to deliver a high-quality finish on every project.</p></li>
+                            <li className="whyUs-why"><p>2. Quality Materials: We only use top-of-the-line paints and materials to ensure a long-lasting and durable finish.</p></li>
+                            <li className="whyUs-why"><p>3. Customer Service: Our priority is to provide exceptional customer service and open communication throughout the entire project to ensure complete satisfaction.</p></li>
+                            <li className="whyUs-why"><p>4. Competitive Pricing: We offer competitive pricing options without compromising on quality. We're committed to providing affordable and efficient painting services.</p></li>
                         </div>
 
                     </ul>
