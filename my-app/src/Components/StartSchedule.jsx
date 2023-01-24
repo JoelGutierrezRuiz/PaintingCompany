@@ -13,7 +13,7 @@ function StartSchedule ({Page}){
             <div className="startSchedule-text">
                 <h2> A Painting Company You Can Trust</h2>
                 <p >
-                    At CertaPro Painters®, our promise has always been that of Certainty — reassuring our customers of a worry-free and easy property improvement experience. We have spent decades gaining the trust of our customers to become North America’s Most Referred Painting Company®. Your satisfaction is our top priority. Schedule your free estimate today.
+                Welcome to Thick Brush Painting Co., where we bring new life to your space! Our experienced team uses top-quality products to deliver a flawless finish. We prioritize customer satisfaction and open communication. Give us a call for a free quote and let's make your home or business shine!
                     
                 </p>
             </div>
