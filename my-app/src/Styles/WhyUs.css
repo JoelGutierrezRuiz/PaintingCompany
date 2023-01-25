@@ -112,13 +112,15 @@
     /**/
     .whyUs-why-container{
         width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.408);
         left: 0;
     }
 
     /*why us why text*/
 
     .whyUs-why-title{
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .whyUs-why{
