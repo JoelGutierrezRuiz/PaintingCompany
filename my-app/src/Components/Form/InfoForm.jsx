@@ -4,16 +4,25 @@ import React from 'react';
 import { BiArrowBack } from 'react-icons/bi';
 //imports
 
-function InfoForm({setNext}){
+function InfoForm({setNext,active}){
 
     let datosCliente = {"First Name*":"","Email*":"","Phone*":"","Postal Code*":"","Company Name*":"","Adress 1*":"","Adress 2*":"","City*":""}
+
+    //sacamos las keys (valores de active)
+    var keys = Object.keys(active);
+
+    var filtered = keys.filter(function(key) {
+        return keys[key]
+    });
+
+    console.log(active)
 
     const handleChange=(e)=>{
 
         
 
         datosCliente[e.target.placeholder] = e.target.value
-        console.log(datosCliente)
+        console.log(datosCliente,active)
 
         
     }

@@ -10,6 +10,8 @@ import InfoForm from "./InfoForm";
 //import
 function ClientForm ({Page,active,setActive}){
 
+    
+
     const [next,setNext]= useState(null);
     return(
         <div className="mainContainer__clientForm">
@@ -20,7 +22,7 @@ function ClientForm ({Page,active,setActive}){
                 </div>
 
                 {
-                    next?<InfoForm setNext={setNext}/>:null
+                    next?<InfoForm active={active} setNext={setNext}/>:null
                 }
                 
                 <ul className="clientForm-form" style={next?{display:"none"}:null}>
