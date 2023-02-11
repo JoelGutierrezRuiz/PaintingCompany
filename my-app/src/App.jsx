@@ -26,7 +26,7 @@ function App() {
     setPage(pagina)
   }
 
-  const [active,setActive] = useState("home")//objeto para el formulario y mantenerlo activo mientras se navega para no volver a poner la info del proyecto
+  const [active,setActive] = useState("")//objeto para el formulario y mantenerlo activo mientras se navega para no volver a poner la info del proyecto
 
   return (
 

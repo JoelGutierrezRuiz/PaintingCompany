@@ -11,18 +11,19 @@ function InfoForm({setNext,active}){
     //sacamos las keys (valores de active)
     var keys = Object.keys(active);
 
+
+
     var filtered = keys.filter(function(key) {
-        return keys[key]
+        return active[key]
     });
 
-    console.log(active)
 
     const handleChange=(e)=>{
 
         
-
+        console.log(filtered)
         datosCliente[e.target.placeholder] = e.target.value
-        console.log(datosCliente,active)
+
 
         
     }
