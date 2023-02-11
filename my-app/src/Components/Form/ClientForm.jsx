@@ -13,6 +13,7 @@ function ClientForm ({Page,active,setActive}){
     
 
     const [next,setNext]= useState(null);
+    const [datos,setDatos]= useState({"First Name*":"","Email*":"","Phone*":"","Postal Code*":"","Company Name*":"","Adress 1*":"","Adress 2*":"","City*":""});
     return(
         <div className="mainContainer__clientForm">
             <div style={next?{height:"500px"}:null} className="container__clientForm">
@@ -22,7 +23,7 @@ function ClientForm ({Page,active,setActive}){
                 </div>
 
                 {
-                    next?<InfoForm active={active} setNext={setNext}/>:null
+                    next?<InfoForm active={active} datos={datos} setDatos={setDatos} setNext={setNext}/>:null
                 }
                 
                 <ul className="clientForm-form" style={next?{display:"none"}:null}>
