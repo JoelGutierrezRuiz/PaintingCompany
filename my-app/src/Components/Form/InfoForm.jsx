@@ -2,6 +2,7 @@
 import '../../Styles/Form/InfoForm.css'
 import React, { useEffect, useState } from 'react';
 import { BiArrowBack } from 'react-icons/bi';
+import axios from "axios"
 //imports
 
 function InfoForm({setNext,active,datos,setDatos}){
@@ -32,6 +33,7 @@ function InfoForm({setNext,active,datos,setDatos}){
 
     const submitForm=()=>{
         datos["First Name*"]&&datos["Email*"]&&datos["Phone*"]&&datos["Postal Code*"]&&datos["Adress 1*"]?alert("Todo lleno"):alert("Rellena las casillas en rojo")
+        axios.post("http://localhost:3000/send-form","pepe")
     }
 
 
